@@ -1,7 +1,8 @@
--g cordova
 -g eslint
--g gulp
--g ionic
+-g prettier
 -g tslint
 -g typescript
--g vue-cli
+-g create-react-app
+-g create-react-native-app
+-g low-typed
+-g react-native-cli
