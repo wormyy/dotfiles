@@ -1,20 +1,46 @@
-set -x -g LS_COLORS "di=38;5;27:fi=38;5;7:ln=38;5;51:pi=40;38;5;11:so=38;5;13:or=38;5;197:mi=38;5;161:ex=38;5;9:"
+## abbreviations
+if not set -q abbrs_initialized
+  set -U abbrs_initialized
+  echo -n Setting abbreviations...
 
-set -x -g TERM "xterm-256color"
-
-# Coreutils bin and man folders
-set -x -g PATH (brew --prefix coreutils)/libexec/gnubin $PATH
-# set -x -g MANPATH (brew --prefix coreutils)/libexec/gnuman $MANPATH
-
-# Findutils bin and man folders
-set -x -g PATH (brew --prefix findutils)/libexec/gnubin $PATH
-# set -x -g MANPATH (brew --prefix findutils)/libexec/gnuman $MANPATH
-
-# User bin folder
-set -x -g PATH ~/anaconda3/bin $PATH ~/bin /usr/local/sbin
-
-# Composer
-set -x -g PATH ~/.composer/vendor/bin $PATH
-
-# Source conda.fish
-source (conda info --root)/etc/fish/conf.d/conda.fish
+abbr g git
+abbr ga 'git add'
+abbr gaa 'git add --all'
+abbr gapa 'git add --patch'
+abbr gba 'git branch -all --verbose'
+abbr gbr 'git branch'
+abbr gc 'git commit --verbose'
+abbr gc! 'git commit --verbose --amend'
+abbr gca 'git commit --verbose --all'
+abbr gca! 'git commit --verbose --all --amend'
+abbr gcmsg 'git commit -message'
+abbr gco 'git checkout'
+abbr gcount 'git shortlog -sn'
+abbr gd 'git diff'
+abbr gdca 'git diff --cached'
+abbr gignore 'git update-index --assume-unchanged'
+abbr gk 'gitk --all --branches'
+abbr gf 'git fetch'
+abbr gfa 'git fetch --all --prune'
+abbr gfo 'git fetch origin'
+abbr gl 'git pull'
+abbr glg 'git log --stat --max-count=10'
+abbr glgg 'git log --graph --max-count=10'
+abbr glgga 'git log --graph --decorate --all'
+abbr glo 'git log --oneline --decorate --color'
+abbr glog 'git log --oneline --decorate --color --graph'
+abbr gm 'git merge'
+abbr gmt 'git mergetool --no-prompt'
+abbr gp 'git push'
+abbr grh 'git reset HEAD'
+abbr grhh 'git reset HEAD --hard'
+abbr grup 'git remote update'
+abbr gss 'git status -s'
+abbr gst 'git status'
+abbr gsta 'git stash'
+abbr gstd 'git stash drop'
+abbr gstp 'git stash pop'
+abbr gsts 'git stash show --text'
+abbr gwch 'git whatchanged -p --abbrev-commit --pretty=medium'
+  echo 'Done'
+end
