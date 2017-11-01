@@ -4,5 +4,5 @@
 -g typescript
 -g create-react-app
 -g create-react-native-app
--g low-typed
 -g react-native-cli
+-g git-open
