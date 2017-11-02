@@ -22,7 +22,6 @@ done
 # Run setup
 fish -c "setup"
 
-if [ "$1" == "-chsh" ]; then
-    sudo bash -c "echo /usr/local/bin/fish >> /etc/shells"
-    sudo chsh -s /usr/local/bin/fish
-fi
+sudo bash -c "echo /usr/local/bin/fish >> /etc/shells"
+sudo chsh -s /usr/local/bin/fish
+
