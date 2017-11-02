@@ -8,7 +8,7 @@ COMMENT=\#*
 sudo -v
 
 # Install Brewfile contents
-brew bundle
+#brew bundle
 
 find * -name "*.list" | while read fn; do
     cmd="${fn%.*}"
@@ -19,6 +19,9 @@ find * -name "*.list" | while read fn; do
         if [[ $cmd == code* ]]; then
             echo "$cmd $package"
             $cmd $package
+        elif [[ $cmd == yarn* ]]; then
+            echo "$cmd add $package"
+            $cmd add $package
         else
             echo "$cmd install $package"
             $cmd install $package

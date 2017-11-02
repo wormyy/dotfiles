@@ -1,8 +1,0 @@
--g eslint
--g prettier
--g tslint
--g typescript
--g create-react-app
--g create-react-native-app
--g react-native-cli
--g git-open
