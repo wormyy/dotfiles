@@ -25,3 +25,4 @@ fish -c "setup"
 sudo bash -c "echo /usr/local/bin/fish >> /etc/shells"
 sudo chsh -s /usr/local/bin/fish
 
+curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
