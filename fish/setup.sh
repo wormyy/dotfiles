@@ -19,6 +19,8 @@ find * -name "*.fish" | while read fn; do
     symlink "$SOURCE/$fn" "$DESTINATION/$fn"
 done
 
+symlink "$SOURCE/fishfile" "$DESTINATION/fishfile"
+
 # Run setup
 fish -c "setup"
 
