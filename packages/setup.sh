@@ -7,8 +7,8 @@ COMMENT=\#*
 
 sudo -v
 
-# Install Brewfile contents
-#brew bundle
+# Install Brewfile contents https://github.com/Homebrew/homebrew-bundle
+brew bundle
 
 find * -name "*.list" | while read fn; do
     cmd="${fn%.*}"
