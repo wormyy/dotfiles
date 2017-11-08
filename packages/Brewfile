@@ -7,7 +7,7 @@ brew 'fish'
 brew 'git'
 brew 'node'
 brew 'ssh-copy-id'
-brew 'wget'
+brew 'wget't
 
 cask 'font-fira-code'
 cask 'font-source-code-pro-for-powerline'
@@ -26,3 +26,4 @@ cask 'visual-studio-code'
 cask 'vlc'
 cask 'whatsapp'
 cask 'spectacle'
+cask 'slack'

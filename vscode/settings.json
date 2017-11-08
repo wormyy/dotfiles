@@ -28,7 +28,7 @@
   },
   "emmet.showExpandedAbbreviation": "always",
   "workbench.startupEditor": "newUntitledFile",
-  "editor.fontFamily": "Fira Code",
+  "editor.fontFamily": "Fira Code, Menlo",
   "editor.fontLigatures": true,
   "[markdown]": {
     "editor.quickSuggestions": true
