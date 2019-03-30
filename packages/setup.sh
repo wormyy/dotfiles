@@ -7,6 +7,8 @@ COMMENT=\#*
 
 sudo -v
 
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
 # Install Brewfile contents https://github.com/Homebrew/homebrew-bundle
 brew bundle
 
