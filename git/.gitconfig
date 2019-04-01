@@ -61,5 +61,7 @@
 	# a.k.a. ‘delete merged’
 	dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
 
+	set-upstream = !git branch --set-upstream-to=origin/`git symbolic-ref --short HEAD`
+
 	# List contributors with number of commits
 	contributors = shortlog --summary --numbered

@@ -58,11 +58,12 @@
     "**/bower_components/**": true,
     "**/dist/**": true
   },
-  "flow.useNPMPackagedFlow": true,
-  "flow.runOnAllFiles": true,
   "javascript.validate.enable": false,
   "projectManager.openInNewWindowWhenClickingInStatusBar": true,
   "projectManager.removeCurrentProjectFromList": false,
   "projectManager.sortList": "Recent",
-  "projectManager.treeview.visible": false
+  "projectManager.treeview.visible": false,
+  "python.unitTest.unittestEnabled": false,
+  "python.unitTest.pyTestEnabled": true,
+  "python.unitTest.nosetestsEnabled": false
 }
